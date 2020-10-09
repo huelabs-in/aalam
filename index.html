@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang=en manifest=cache.manifest>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>Aalam Learning Center</title>
+<meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="telephone=no" name=format-detection>
+<meta name=HandheldFriendly content=true>
+<meta http-equiv=cache-control content=no-cache />
+<meta http-equiv=Pragma content=no-cache />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css>
+<link rel=stylesheet type=text/css href=css/reset.min.css>
+<link rel=preload type=text/css href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" as=style onload="this.onload=null;this.rel='stylesheet'">
+<link rel=stylesheet type=text/css href=css/vendor.css>
+<link rel=stylesheet type=text/css href=css/main.css>
+<script type=text/javascript src=js/update_cache.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js></script>
+<style>body,.overlay-cont .phil-cont,.ppl-cont,.footer-section-about .footer-p,.footer-section-about .footer-list a,.footer-section-about .get-in-touch p,.footer-section-about .copyright-area p,.quote-para,.common-para{font-family:'Ubuntu',sans-serif!important}.footer-title{font-family:'Cairo',sans-serif!important;line-height:1.4;font-weight:bold}.home-title{font-family:'Cairo',sans-serif!important;line-height:1.4;font-weight:bold}.phil-title,.prog-head,.ppl-title,.section-para-cont{font-family:'Cairo',sans-serif!important;line-height:1.4}.section-para-cont{font-size:24px}.phil-cont{font-family:'Ubuntu',sans-serif!important}.intro{padding-top:50px}@media(min-width:992px){.pad-b-300{padding-bottom:312px!important}}@media(min-width:1440px){.pad-b-300{padding-bottom:510px!important}}.parallax-div{margin:0;padding:0;width:100%;height:100vh;background:#d3cec2}.background-home{width:100%;height:100vh;position:absolute;background:url(assets/img/home/parallax/landing1.png) no-repeat;background-size:cover}.home1{position:absolute;width:100%;height:100vh;background:url(assets/img/home/parallax/cloudsgif.gif) no-repeat;background-size:cover}.home2{position:absolute;width:100%;height:100vh;background:url(assets/img/home/parallax/landing3.png) no-repeat;background-size:cover}.home3{position:absolute;width:100%;height:100vh;background:url(assets/img/home/parallax/landing4.png) no-repeat;background-size:cover}.background-home-mob{width:100%;height:100vh;position:absolute;background:url(assets/img/mobile/home/landing1.png) no-repeat;background-size:cover}.homemob1{position:absolute;width:100%;height:100vh;background:url(assets/img/mobile/home/landing2.png) no-repeat;background-size:cover}.homemob2{position:absolute;width:100%;height:100vh;background:url(assets/img/mobile/home/landing3.png) no-repeat;background-size:cover}.ml10{position:relative;font-weight:900;font-size:4em}.ml10 .text-wrapper{position:relative;display:inline-block;padding-top:.2em;padding-right:.05em;padding-bottom:.1em;overflow:hidden}.ml10 .letter{display:inline-block;line-height:1em;transform-origin:0 0}</style>
+</head>
+<body class=home-body onload=checkForUpdate()>
+<div class="preloader text-center preloader-bg" id=js-preloader data-arts-theme-text=light>
+<div class=preloader__content>
+<div class="preloader__header mt-auto">
+<img src=assets/img/loading-logo.png width=100% alt>
+</div>
+<div class="preloader__counter h5"><span class="preloader__counter-number preloader__counter-current">0</span><span class=preloader__counter-divider>&nbsp;&nbsp;/&nbsp;&nbsp;</span><span class="preloader__counter-number preloader__counter-total">100</span>
+</div>
+</div>
+</div>
+<div class="curtain transition-curtain" id=js-page-transition-curtain>
+<div class=curtain__wrapper-svg>
+<svg class=curtain-svg viewBox="0 0 1920 1080" preserveAspectRatio=none version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink>
+<path class=curtain-svg__normal d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+</path>
+</svg>
+</div>
+</div>
+<div class="header-curtain curtain" id=js-header-curtain>
+<div class=curtain__wrapper-svg>
+<svg class=curtain-svg viewBox="0 0 1920 1080" preserveAspectRatio=none version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink>
+<path class=curtain-svg__normal d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+</path>
+</svg>
+</div>
+</div>
+<div class="header-curtain header-curtain_transition curtain" id=js-header-curtain-transition>
+<div class=curtain__wrapper-svg>
+<svg class=curtain-svg viewBox="0 0 1920 1080" preserveAspectRatio=none version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink>
+<path class=curtain-svg__normal d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+</path>
+<path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+</path>
+</svg>
+</div>
+</div>
+<div class=cursor id=js-cursor>
+<div class=cursor__wrapper>
+<div class=cursor__follower>
+<svg version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink>
+<circle id=inner cx=25 cy=25 r=24 style=opacity:.6></circle>
+<circle id=outer cx=25 cy=25 r=24 style=stroke-dashoffset:252.327;stroke-dasharray:0,999999px></circle>
+</svg>
+</div>
+<div class=cursor__arrows>
+<div class="cursor__arrow cursor__arrow_up material-icons">keyboard_arrow_up</div>
+<div class="cursor__arrow cursor__arrow_down material-icons">keyboard_arrow_down</div>
+<div class="cursor__arrow cursor__arrow_left material-icons">keyboard_arrow_left</div>
+<div class="cursor__arrow cursor__arrow_right material-icons">keyboard_arrow_right</div>
+</div>
+<div class=cursor__label></div>
+<div class="cursor__icon material-icons"></div>
+</div>
+</div>
+<header class="header header_menu-right header_fixed container-fluid" id=page-header data-arts-theme-text=light data-arts-header-sticky-theme=bg-light-1 data-arts-header-logo=secondary data-arts-header-sticky-logo=primary data-arts-header-overlay-theme=light data-arts-header-overlay-background=#f2f1ed>
+<div class="col-auto header__col d-none d-lg-block header-desk">
+<ul class="menu js-menu">
+<li class="menu active"><a href=index.html>Home</a>
+</li>
+<li class=menu><a href=philisophy.html>Philosophy</a>
+</li>
+<li class=menu><a href=philisophy.html#programme>Programme</a>
+</li>
+<li class=menu><a href=why.html>Why Aalam</a>
+</li>
+<li class=menu><a href=aboutaalam.html>Our Story</a>
+</li>
+<li class=menu><a href=contactaalam.html>Contact</a>
+</li>
+</ul>
+</div>
+<div class="header__container header__controls">
+<div class="row justify-content-between align-items-center">
+<div class="col-auto header__col header__col-left"><a class=logo href=index.html target=_blank>
+<div class=logo__wrapper-img>
+<img class src=assets/img/logo-white.png alt height=20 id=def-logo>
+<div class=container-fluid>
+<img class src=assets/img/logo.png alt height=20 id=ani-logo>
+</div>
+</div>
+</a>
+</div>
+<div class="col-auto header__col d-lg-none">
+<div class=header__burger id=js-burger data-arts-cursor=data-arts-cursor data-arts-cursor-scale=1.7 data-arts-cursor-magnetic=data-arts-cursor-magnetic data-arts-cursor-hide-native=true>
+<div class=header__burger-line></div>
+<div class=header__burger-line></div>
+<div class=header__burger-line></div>
+</div>
+</div>
+<div class=header__overlay-menu-back id=js-submenu-back>
+<div class="arrow arrow-left js-arrow arrow_mini" data-arts-cursor=data-arts-cursor data-arts-cursor-hide-native=true data-arts-cursor-scale=0 data-arts-cursor-magnetic=data-arts-cursor-magnetic>
+<svg class=svg-circle viewBox="0 0 60 60" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink>
+<circle class=circle cx=30 cy=30 r=29 fill=none></circle>
+</svg>
+<div class="arrow__pointer arrow-left__pointer"></div>
+<div class=arrow__triangle></div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings">
+<div class=header__wrapper-menu>
+<ul class="menu-overlay js-menu-overlay">
+<li class="menu logo-menu"><a class=h2 href=index.html data-pjax-link=overlayMenu>
+<div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type=lines><span><img src=assets/img/logo.png alt></span>
+</div>
+</a>
+</li>
+<li class=menu><a class=h2 href=index.html data-pjax-link=overlayMenu>
+<div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type=lines>Home</div>
+</a>
+</li>
+<li class=menu><a class=h2 href=philisophy.html data-pjax-link=overlayMenu>
+<div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type=lines>Philosophy</div>
+</a>
+</li>
+<li class=menu><a class=h2 href=philisophy.html#programme data-pjax-link=overlayMenu>
+<div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type=lines>Programme</div>
+</a>
+</li>
+<li class=menu><a class=h2 href=why.html data-pjax-link=overlayMenu>
+<div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type=lines>Why Aalam</div>
+</a>
+</li>
+<li class=menu><a class=h2 href=aboutaalam.html data-pjax-link=overlayMenu>
+<div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type=lines>Our Story</div>
+</a>
+</li>
+<li class=menu><a class=h2 href=contactaalam.html data-pjax-link=overlayMenu>
+<div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type=lines>Contact</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<div class=bg-ash id=page-wrapper data-barba=container>
+<main class=page-wrapper__content>
+<section class="section section-masthead section-fullheight text-center" data-arts-os-animation=data-arts-os-animation data-arts-theme-text=light data-background-color>
+<div class="section-masthead__inner section-fullheight__inner container-fluid">
+<header class="row section-masthead__header justify-content-center">
+<div class=col>
+<div class=w-100></div>
+<div class="section-masthead__heading split-text js-split-text mt-1" data-split-text-type=lines,words data-split-text-set=words>
+<h1 class="h1 mt-0 mb-0 home-title">Welcome to Learning</h1>
+<p class="overlay-cont text-center" id=web-ver>
+We hope to create young minds which break life into <br> its simplest elements
+and
+enjoy them thoroughly.
+</p>
+<p class="overlay-cont text-center" id=mob-ver>
+We hope to create young minds which break life into its simplest elements
+and
+enjoy them thoroughly.
+</p>
+</div>
+<div class=w-100></div>
+</div>
+<div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_center" id=web-ver>
+<div id=section10 class="demo rellax" data-arts-scroll-down=data-arts-scroll-down data-arts-cursor=data-arts-cursor data-arts-cursor-hide-native=true data-arts-cursor-scale=0 data-rellax-speed=1>
+<a href>
+<span></span>
+Scroll down to explore
+</a>
+</div>
+</div>
+<div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_center" id=mob-ver>
+<div id=section10 class=demo data-arts-scroll-down=data-arts-scroll-down data-arts-cursor=data-arts-cursor data-arts-cursor-hide-native=true data-arts-cursor-scale=0>
+<a href>
+<span></span>
+Scroll down to explore
+</a>
+</div>
+</div>
+</header>
+</div>
+<div class="section-image section-masthead__background section-masthead__background_fullscreen">
+<div class=parallax-div id=web-ver>
+<div class=background-home></div>
+<div class="rellax home1" data-rellax-speed=5></div>
+<div class="rellax home2" data-rellax-speed=8></div>
+<div class="rellax home3" data-rellax-speed=1></div>
+</div>
+<div class=parallax-div id=mob-ver>
+<div class=background-home-mob></div>
+<div class="rellax homemob1" data-rellax-speed=5></div>
+<div class="rellax homemob2" data-rellax-speed=0></div>
+</div>
+</div>
+</section>
+<section class=intro data-aos=fade-up>
+<div class=container>
+<div class="text-center pb-3">
+</div>
+<div class=row>
+<div class=col-lg-6 id=web-ver>
+<img src=assets/img/temp/598x510.png width=558 height=423 alt>
+</div>
+<div class=col-lg-6 id=web-ver>
+<div class=ver-mid>
+<p class="ppl-title ali-left">
+Announcements
+</p>
+<p class="ppl-cont ali-left">
+Let’s stay connected! Watch out this space for updates!
+</p>
+</div>
+</div>
+<div class=col-sm-12 id=mob-ver>
+<p class="ppl-title ali-left">
+Announcements
+</p>
+<div class=announ-img>
+<img src=assets/img/temp/598x510.png alt>
+</div>
+<p class="ppl-cont ali-left mt-1">
+Let’s stay connected! Watch out this space for updates!
+</p>
+</div>
+<div class=white-line></div>
+<div class="col-lg-6 mt-1 mb-1" id=web-ver>
+<div class=ver-mid>
+<p class="ppl-title ali-left">
+Our story
+</p>
+<p class="ppl-cont mt-1 ali-left">
+Is there a difference between learning and studying? Does grades really matter?
+What is THE real education?
+Who fails -The student or the teacher? were some of the many questions the
+founders had. In search of answers, they created Aalam.
+</p>
+<div class="mt-1 ali-left">
+<div data-dsn-grid=parallax data-dsn-grid-move=20 class=btn-mob>
+<a href=aboutaalam.html class=contact-btn>Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 mt-1 mb-1" id=web-ver style=text-align:-webkit-center>
+<div id=ani-conthome class=slide>
+<div class=slide__image-wrapper>
+<img class=slide__image src=assets/img/home/animation/ourstory1.png alt>
+</div>
+<div class=slide__content>
+<img class=slide__image src=assets/img/home/animation/ourstory2.png alt>
+</div>
+</div>
+</div>
+<div class=col-sm-12 id=mob-ver>
+<p class="ppl-title ali-left">
+Our story
+</p>
+<div class=announ-img>
+<img src=assets/img/home/readingletter.png alt>
+</div>
+<p class="ppl-cont mt-3 text-center">
+Is there a difference between learning and studying? Does grades really matter?
+What is THE real education?
+Who fails -The student or the teacher? were some of the many questions the
+founders had. In search of answers, they created Aalam.
+</p>
+<div class="mt-3 text-center">
+<div data-dsn-grid=parallax data-dsn-grid-move=20 class=btn-mob>
+<a href=aboutaalam.html class=contact-btn>Read More</a>
+</div>
+</div>
+</div>
+<div class=white-line></div>
+<div class="col-lg-6 mt-1 mb-1" id=web-ver style=text-align:-webkit-center>
+<div id=ani-conthometwo class=slide style=width:100%>
+<div class=slide__image-wrapper>
+<img class=slide__image src=assets/img/home/animation/ourphilosophy1.png alt>
+</div>
+<div class=slide__content>
+<img class=slide__image src=assets/img/home/animation/ourphilosophy2.png alt>
+</div>
+</div>
+</div>
+<div class="col-lg-6 mt-1 mb-1" id=web-ver>
+<div class=ver-mid>
+<p class="ppl-title ali-left">
+Our philosophy
+</p>
+<p class="ppl-cont mt-1 ali-left">
+The early years of learning is the foundation for a child’s belief system. We
+have taken this seriously and have
+laid out 5 simple cornerstones which shall let the child celebrate life.
+</p>
+<div class="mt-1 ali-left">
+<div data-dsn-grid=parallax data-dsn-grid-move=20 class=btn-mob>
+<a href=philisophy.html class=contact-btn>Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class=col-sm-12 id=mob-ver>
+<p class="ppl-title text-center">
+Our philosophy
+</p>
+<div class=announ-img>
+<img src=assets/img/home/diversity.png alt>
+</div>
+<p class="ppl-cont mt-3 text-center">
+The early years of learning is the foundation for a child’s belief system. We have
+taken this seriously and have
+laid out 5 simple cornerstones which shall let the child celebrate life.
+</p>
+<div class="mt-3 text-center">
+<div data-dsn-grid=parallax data-dsn-grid-move=20 class=btn-mob>
+<a href=philisophy.html class=contact-btn>Read More</a>
+</div>
+</div>
+</div>
+<div class=white-line></div>
+<div class="col-lg-6 mt-1 mb-1" id=web-ver>
+<div class=ver-mid>
+<p class="ppl-title ali-left">
+Our Programmes
+</p>
+<p class="ppl-cont mt-1 ali-left">
+Children are always curious and want to explore new things. We recognize that
+these are qualities that need to be
+nurtured to make learning fun.
+</p>
+<div class="mt-1 ali-left">
+<div data-dsn-grid=parallax data-dsn-grid-move=20 class=btn-mob>
+<a href=philisophy.html#programme class=contact-btn>Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 mt-1 mb-1" id=web-ver style=text-align:-webkit-center>
+<div id=ani-conthomethree class=slide style=width:100%>
+<div class=slide__image-wrapper>
+<img class=slide__image src=assets/img/home/animation/momandme1.png alt>
+</div>
+<div class=slide__content>
+<img class=slide__image src=assets/img/home/animation/momandme2.png alt>
+</div>
+</div>
+</div>
+<div class=col-sm-12 id=mob-ver>
+<p class="ppl-title text-center">
+Our Programmes
+</p>
+<div class=announ-img>
+<img src=assets/img/home/momandme.png alt>
+</div>
+<p class="ppl-cont mt-3 text-center">
+Children are always curious and want to explore new things. We recognize that these
+are qualities that need to be
+nurtured to make learning fun.
+</p>
+<div class="mt-3 text-center">
+<div data-dsn-grid=parallax data-dsn-grid-move=20 class=btn-mob>
+<a href=philisophy.html#programme class=contact-btn>Read More</a>
+</div>
+</div>
+</div>
+<div class=white-line></div>
+<div class="col-lg-12 insta-title text-center mb-2">
+<p class="section-para-cont prog-head text-center mb-1">
+&nbsp; Aalam Play &nbsp;
+</p>
+<p class="common-para play-head">
+Keeping kids engaged is a Himalayan task. Parents run out of ideas soon and turn to
+Mobile or Tablet screens as
+their last resort. Aalam Play is an initiative by Aalam ELC to help parents keep
+their kids off screens and engage them
+with fun activities at home.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="box-im insta-feed">
+<div class=powr-instagram-feed id=788aca16_1597395836></div>
+<script src="https://www.powr.io/powr.js?platform=html"></script>
+</div>
+</section>
+<section class=our-ppl>
+<div class=footer-home>
+<div class=container style=padding-left:20px>
+<div class="pt-2 pb-3 text-center">
+<div data-dsn-grid=parallax data-dsn-grid-move=20>
+<button type=submit class=contact-btn>View Profile</button>
+</div>
+</div>
+<div class="text-center pad-b-300">
+<p class=home-cont>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+gravida.
+Risus commodo viverra maecenas accumsan lacus vel facilisis.
+</p>
+</div>
+</div>
+</div>
+</section>
+<div id=mob-ver>
+<img src=assets/img/footergif.gif alt>
+</div>
+<footer class=footer id=page-footer data-arts-theme-text=dark data-arts-footer-logo=primary>
+<div class=footer-section-about>
+<div class=container-fluid>
+<div class=footer-top>
+<div class="row justify-content-center">
+<div class="col-sm-12 col-lg-4">
+<div class="single-footer mb--50 mb-lg--30">
+<h5 class=footer-title>About Aalam</h5>
+<p class=footer-p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor
+incididunt ut labore
+et dolore magna aliqua.
+</p>
+<p class=footer-p>
+Quis ipsum suspendisse ultrice s gravida. Risus commodo viverra
+maecenas.
+</p>
+</div>
+</div>
+<div class="col-sm-12 col-lg-3">
+<div class="single-footer mb--50 mb-lg--30 quick-links">
+<h5 class=footer-title>Quick Links</h5>
+<div class=row>
+<div class="col-12 col-lg-12">
+<ul class=footer-list>
+<li><a href=index.html>Home</a></li>
+<li><a href=philisophy.html>Philosophy</a></li>
+<li><a href=philisophy.html#programme>Programme</a></li>
+<li><a href=why.html>Why Aalam</a></li>
+<li><a href=aboutaalam.html>Our Story</a></li>
+<li><a href=contactaalam.html>Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-lg-5">
+<div class="single-footer mb--50 mb-lg--30 get-in-touch">
+<h5 class=footer-title>Get in touch with us</h5>
+<div class=row>
+<div class=col-md-9>
+<div class=get-text>
+<p>+91 01234 56789<br> <span>Monday to Friday 9AM to 6PM</span>
+</p>
+</div>
+<div class=get-text>
+<p><a href=mailto:info@aalamacademy.org>info@aalamacademy.org</a><br>
+<span>We
+will contact within 24 hours</span></p>
+</div>
+<div>
+<p><span>#123, 1st Cross, 2nd Main, 3rd Block, Chennai - 123
+456, Tamil
+Nadu</span></p>
+</div>
+</div>
+<div class="col-md-3 social-icons text-sm-right">
+<a href=https://m.facebook.com/aalamplay/ target=_blank><img src=assets/img/facebook-black.png alt></a>
+<a href=https://www.instagram.com/aalamplay target=_blank><img src=assets/img/instagram-black.png alt></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=copyright-area>
+<div class="row align-items-center">
+<div class="col-sm-6 text-sm-left text-center mb-sm-0">
+<p class=copyright-text>Copyright © 2020 <b>Aalam Learning Centre</b></p>
+</div>
+<div class="col-sm-6 text-sm-right text-center">
+<p class=copyright-text>Designed by <a href><b>design distrikt</b></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</main>
+</div>
+<script>$(document).ready(function(){$('.insta-feed').click(function(){$('.maps iframe').css("pointer-events","auto");});$(".insta-feed").mouseleave(function(){$('.insta-feed iframe').css("pointer-events","none");});});</script>
+<script src=js/vendor.js></script>
+<script src=js/components.js></script>
+<script>const slide1=document.getElementById('ani-conthome');slide1.addEventListener('mousemove',function(e){const r=this.getBoundingClientRect()
+this.style.setProperty('--x',e.clientX-(r.left+Math.floor(r.width/2)))
+this.style.setProperty('--y',e.clientY-(r.top+Math.floor(r.height/2)))});slide1.addEventListener('mouseleave',function(){this.style.setProperty('--x',0)
+this.style.setProperty('--y',0)});const slide2=document.getElementById('ani-conthometwo');slide2.addEventListener('mousemove',function(e){const r=this.getBoundingClientRect()
+this.style.setProperty('--x',e.clientX-(r.left+Math.floor(r.width/2)))
+this.style.setProperty('--y',e.clientY-(r.top+Math.floor(r.height/2)))});slide2.addEventListener('mouseleave',function(){this.style.setProperty('--x',0)
+this.style.setProperty('--y',0)});const slide3=document.getElementById('ani-conthomethree');slide3.addEventListener('mousemove',function(e){const r=this.getBoundingClientRect()
+this.style.setProperty('--x',e.clientX-(r.left+Math.floor(r.width/2)))
+this.style.setProperty('--y',e.clientY-(r.top+Math.floor(r.height/2)))});slide3.addEventListener('mouseleave',function(){this.style.setProperty('--x',0)
+this.style.setProperty('--y',0)});</script>
+<script>$(window).scroll(function(){if($(document).scrollTop()>100){$('#page-header').addClass('animate');}else{$('#page-header').removeClass('animate');}})</script>
+<script src=js/rellax.min.js></script>
+<script type=text/javascript>var rellax=new Rellax('.rellax');</script>
+<script>var textWrapper=document.querySelector('.ml10 .letters');textWrapper.innerHTML=textWrapper.textContent.replace(/\S/g,"<span class='letter'>$&</span>");anime.timeline({loop:true}).add({targets:'.ml10 .letter',rotateY:[-90,0],duration:1300,delay:(el,i)=>45*i}).add({targets:'.ml10',opacity:0,duration:1000,easing:"easeOutExpo",delay:1000});</script>
+</body>
+</html>
