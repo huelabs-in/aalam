@@ -10204,7 +10204,7 @@ small,
     #web-ver {
         display: block !important;
     }
-    #mob-ver, #tap-ver {
+    #mob-ver, #tab-ver {
         display: none !important;
     }
     .section-padding {
