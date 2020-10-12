@@ -319,7 +319,7 @@ a:hover {
     background-color: #fff !important;
 }
 .bg-ash {
-    background-color: #D3CEC2 !important;
+    background-color: #d4cdba !important;
 }
 .bg-why {
     background-color: #E0E0E0 !important;
@@ -10284,7 +10284,7 @@ small,
         /* background-color: #AFC4C4; */
     }
     .play-p {
-        padding-top: 80px;
+        /* padding-top: 80px; */
         color: #fff;
     }
     .play-head {
@@ -10402,7 +10402,7 @@ small,
         padding-bottom: 350px;
     }
     .play-p {
-        padding-top: 235px;
+        padding-top: 80px;
     }
     
   }
@@ -11391,7 +11391,7 @@ p {
 }
 
 .section-welcome {
-    background-color: #AFC4C4;
+    background-color: #9ec8c8;
 }
 
 

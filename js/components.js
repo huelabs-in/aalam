@@ -4381,7 +4381,7 @@
     function Preloader({
         scope = window["$document"],
         target = $("#js-preloader"),
-        curtain = { element: $("#js-page-transition-curtain"), background: $(_0x3c6a("0x98"))[_0x3c6a("0xfff")]("data-background-color") },
+        curtain = { element: $("#js-page-transition-curtain"), background: $(_0x3c6a("0x98"))[_0x3c6a("0x333")]("data-background-color") },
         cursor = { element: $(_0x3c6a("0x79")), offset: { top: 0x0, left: 0x0 } },
         counter = { easing: _0x3c6a("0x2fd"), duration: 0x19, start: 0x0, target: 0x64, prefix: "", suffix: "" },
     }) {
