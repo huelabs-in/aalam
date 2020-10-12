@@ -10204,7 +10204,7 @@ small,
     #web-ver {
         display: block !important;
     }
-    #mob-ver {
+    #mob-ver, #tap-ver {
         display: none !important;
     }
     .section-padding {
@@ -10503,7 +10503,7 @@ small,
     .copyright-text {
         margin-bottom: 0px;
     }
-    #web-ver {
+    #web-ver, #tab-ver {
         display: none !important;
     }
     #mob-ver {
@@ -11520,202 +11520,17 @@ p {
   }
   
 
-  /* Sky Animation */
-
-  .sky {
-  height: 580px;
-  background: #007fd5;
-  position: relative;
-  overflow: hidden;
-  -webkit-animation: sky_background 50s ease-out infinite;
-  -moz-animation: sky_background 50s ease-out infinite;
-  -o-animation: sky_background 50s ease-out infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0)
-}
-
-.moon {
-  background: url("http://i.imgur.com/wFXd68N.png");
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-animation: moon 50s linear infinite;
-  -moz-animation: moon 50s linear infinite;
-  -o-animation: moon 50s linear infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0)
-}
-
-.clouds_one {
-  background: url('../assets/img/footer-1.png');
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-animation: cloud_one 50s linear infinite;
-  -moz-animation: cloud_one 50s linear infinite;
-  -o-animation: cloud_one 50s linear infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0)
-}
-
-.clouds_two {
-  background: url("http://freepngimages.com/wp-content/uploads/2016/02/clouds-transparent-background-2.png");
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-animation: cloud_two 75s linear infinite;
-  -moz-animation: cloud_two 75s linear infinite;
-  -o-animation: cloud_two 75s linear infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0)
-}
-
-.clouds_three {
-  background: url("http://montanaflynn.me/lab/css-clouds/images/cloud_three.png");
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-animation: cloud_three 100s linear infinite;
-  -moz-animation: cloud_three 100s linear infinite;
-  -o-animation: cloud_three 100s linear infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0)
-}
-
-@-webkit-keyframes sky_background {
-  0% {
-    background: #007fd5;
-    color: #007fd5
+  @media only screen and (min-device-width: 834px) and (max-device-width: 1120px) and (orientation:portrait) {
+    .parallax-div#tab-ver {
+        display: block !important;
+    }
+    .parallax-div#web-ver, .parallax-div#mob-ver {
+        display: none !important;
+    }
+    .section-fullheight {
+        padding-bottom: 55px !important;
+    }
+    .overlay-cont {
+        padding-top: 190px !important;
+    }
   }
-  50% {
-    background: #000;
-    color: #a3d9ff
-  }
-  100% {
-    background: #007fd5;
-    color: #007fd5
-  }
-}
-
-@-webkit-keyframes moon {
-  0% {
-    opacity: 0;
-    left: -200% -moz-transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    -moz-transform: scale(1);
-    left: 0% bottom: 250px;
-    -webkit-transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    bottom: 500px;
-    -moz-transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-  }
-}
-
-@-webkit-keyframes cloud_one {
-  0% {
-    left: 0
-  }
-  100% {
-    left: -200%
-  }
-}
-
-@-webkit-keyframes cloud_two {
-  0% {
-    left: 0
-  }
-  100% {
-    left: -200%
-  }
-}
-
-@-webkit-keyframes cloud_three {
-  0% {
-    left: 0
-  }
-  100% {
-    left: -200%
-  }
-}
-
-@-moz-keyframes sky_background {
-  0% {
-    background: #007fd5;
-    color: #007fd5
-  }
-  50% {
-    background: #000;
-    color: #a3d9ff
-  }
-  100% {
-    background: #007fd5;
-    color: #007fd5
-  }
-}
-
-@-moz-keyframes moon {
-  0% {
-    opacity: 0;
-    left: -200% -moz-transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    -moz-transform: scale(1);
-    left: 0% bottom: 250px;
-    -webkit-transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    bottom: 500px;
-    -moz-transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-  }
-}
-
-@-moz-keyframes cloud_one {
-  0% {
-    left: 0
-  }
-  100% {
-    left: -200%
-  }
-}
-
-@-moz-keyframes cloud_two {
-  0% {
-    left: 0
-  }
-  100% {
-    left: -200%
-  }
-}
-
-@-moz-keyframes cloud_three {
-  0% {
-    left: 0
-  }
-  100% {
-    left: -200%
-  }
-}
-
-
