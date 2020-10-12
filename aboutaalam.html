@@ -28,7 +28,17 @@
 .ourstorytab2{position:absolute;width:100%;height:100vh;background:url(assets/img/tab/our/landing3.png) no-repeat;background-size:cover}
 .ourstorytab3{position:absolute;width:100%;height:100vh;background:url(assets/img/tab/our/landing4.png) no-repeat;background-size:cover}
 
-.intro section-padding{padding-top:140px}</style>
+.intro section-padding{padding-top:140px}
+@media (max-width: 991px)
+{
+    .intro {
+    padding-top: 0px !important;
+    }
+    .about-body .about-bold-cont {
+        text-align: left;
+    }
+}
+</style>
 </head>
 <body class=about-body onload=checkForUpdate()>
 <div>
@@ -189,14 +199,22 @@
 <section class="section section-masthead section-fullheight text-center" data-arts-os-animation=data-arts-os-animation data-arts-theme-text=light data-background-color>
 <div class="section-masthead__inner section-fullheight__inner container-fluid">
 <header class="row section-masthead__header justify-content-center">
-<div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_center">
-<div id=section10 class="demo rellax" data-arts-scroll-down=data-arts-scroll-down data-arts-cursor=data-arts-cursor data-arts-cursor-hide-native=true data-arts-cursor-scale=0 data-rellax-speed=3>
+<div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_center" id="web-ver">
+<div id=section10 class="demo rellax" data-arts-scroll-down=data-arts-scroll-down data-arts-cursor=data-arts-cursor data-arts-cursor-hide-native=true data-arts-cursor-scale=0 data-rellax-speed=4>
 <a href>
 <span></span>
 Scroll down to explore
 </a>
 </div>
 </div>
+<div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_center" id="mob-ver">
+    <div id=section10 class="demo rellax" data-arts-scroll-down=data-arts-scroll-down data-arts-cursor=data-arts-cursor data-arts-cursor-hide-native=true data-arts-cursor-scale=0 data-rellax-speed=2>
+    <a href>
+    <span></span>
+    Scroll down to explore
+    </a>
+    </div>
+    </div>
 </header>
 </div>
 <div class="section-image section-masthead__background section-masthead__background_fullscreen">
@@ -315,11 +333,9 @@ Abinaya and Gokul
 <section>
 <img src=assets/img/our/founders.jpg alt id=web-ver>
 </section>
-<section style=margin-top:-140px id=mob-ver>
-<img src=assets/img/mob/our-founder.jpg alt>
-</section>
-<section style=margin-top:-140px id=tab-ver>
-    <img src=assets/img/tab/our/ourtab.png alt>
+<section class="founders" style=margin-top:-140px >
+    <img src=assets/img/mob/our-founder.jpg alt id=mob-ver>
+    <img src=assets/img/tab/our/ourtab.png alt id=tab-ver>
 </section>
 <section class="bg-ash mob-heading">
 <div class=container>

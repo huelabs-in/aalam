@@ -322,7 +322,7 @@ a:hover {
     background-color: #d4cdba !important;
 }
 .bg-why {
-    background-color: #E0E0E0 !important;
+    background-color: #d3cec3 !important;
 }
 .container-fluid {
     padding-left: var(--gutter-horizontal);
@@ -11521,10 +11521,10 @@ p {
   
 
   @media only screen and (min-device-width: 834px) and (max-device-width: 1120px) and (orientation:portrait) {
-    .parallax-div#tab-ver {
+    .parallax-div#tab-ver, .scene img#tab-ver, .founders img#tab-ver {
         display: block !important;
     }
-    .parallax-div#web-ver, .parallax-div#mob-ver {
+    .parallax-div#web-ver, .parallax-div#mob-ver, .scene img#mob-ver, .founders img#mob-ver {
         display: none !important;
     }
     .section-fullheight {
@@ -11536,4 +11536,7 @@ p {
     .ppl-title{
         font-size: 36px !important;
     }
+    /* .scene, .founders {
+        margin-bottom: -45px;
+    } */
   }
