@@ -792,7 +792,6 @@ a:hover {
 }
 .curtain__rect {
     flex: 1 0 80%;
-    background: #ffffff;
 }
 .curtain {
     width: 100%;
@@ -4004,7 +4003,7 @@ div.wpcf7-acceptance-missing {
 .preloader__curtain-svg {
     width: 100%;
     height: 100%;
-    fill: #ccc;
+    fill: #fff;
 }
 .preloader__curtain {
     position: absolute;
