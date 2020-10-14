@@ -10516,7 +10516,10 @@ small,
         display: block !important;
     }
     .insta-title {
-        padding-top: 50px !important;
+        padding-top: 0px !important;
+    }
+    .quick-footer {
+        padding-top: 10px;
     }
     .pt-5 {
         padding-top: 1em !important;
