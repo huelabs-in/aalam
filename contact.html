@@ -132,7 +132,7 @@
 					<li class=menu><a href=philisophy.html#programme>Programme</a> </li>
 					<li class=menu><a href=why.html>Why Aalam</a> </li>
 					<li class=menu><a href=aboutaalam.html>Our Story</a> </li>
-					<li class="menu active"><a href=contactaalam.html>Contact</a> </li>
+					<li class="menu active"><a href=contact.html>Contact</a> </li>
 				</ul>
 			</div>
 			<div class="header__container header__controls">
@@ -196,7 +196,7 @@
 							</a>
 						</li>
 						<li class=menu>
-							<a class=h2 href=contactaalam.html data-pjax-link=overlayMenu>
+							<a class=h2 href=contact.html data-pjax-link=overlayMenu>
 								<div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type=lines>Contact</div>
 							</a>
 						</li>
@@ -245,24 +245,26 @@
 									<div class=image-zoom data-dsn-grid=parallax data-dsn-grid-move=20> <img src=assets/img/contact/contact.png alt> </div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 text-center mob-form mt-2">
-									<form>
+
+									<form method="POST" action="emailcontact.html" enctype="multipart/form-data">
 										<div class=form-group>
-											<input type=text class=form-control id=name placeholder=Name required> </div>
+											<input type=text class=form-control name="fullname" placeholder=Name required> </div>
 										<div class=form-group>
-											<input type=mail class=form-control id=email placeholder=Email required> </div>
+											<input type=mail class=form-control name="email" placeholder=Email required> </div>
 										<div class=form-group>
-											<input type=number class=form-control id=phone placeholder=Phone required> </div>
+											<input type=number class=form-control name="phone" placeholder=Phone required> </div>
 										<div class=form-group>
-											<input type=text class=form-control id=subject placeholder=Subject required> </div>
+											<input type=text class=form-control name=subject placeholder=Subject required> </div>
 										<div class=form-group>
-											<textarea class=form-control id=message rows=5 placeholder="Write your message here" required></textarea>
+											<textarea class=form-control name=message rows=5 placeholder="Write your message here" required></textarea>
 										</div>
 										<div class=contact-btn-box>
 											<div data-dsn-grid=parallax data-dsn-grid-move=20>
 												<button type=submit class=contact-btn>Send Message</button>
 											</div>
 										</div>
-									</form>
+                                    </form>
+                                    
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 contact-form-img mt-2 mb-3" id=web-ver>
 									<div style=padding-bottom:30px>
@@ -311,7 +313,7 @@
 														<li><a href=philisophy.html#programme>Programme</a></li>
 														<li><a href=why.html>Why Aalam</a></li>
 														<li><a href=aboutaalam.html>Our Story</a></li>
-														<li><a href=contactaalam.html>Contact</a></li>
+														<li><a href=contact.html>Contact</a></li>
 													</ul>
 												</div>
 											</div>
