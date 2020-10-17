@@ -57,6 +57,10 @@
 		font-family: 'Ubuntu', sans-serif!important
 	}
 
+	.send-msg {
+		padding-top: 30px; padding-left: 20px;
+	}
+
     @media(max-width:991px) {
         .mt-7 {
             margin-top: 0px;
@@ -64,6 +68,9 @@
         .pt-6 {
             padding-top: 0px;
         }
+		.send-msg {
+			padding-top: 0px; padding-left: 0px;
+		}
     }
 	</style>
 </head>
@@ -208,18 +215,7 @@
 			<main class=page-wrapper__content>
 				<section class=contact-form-section style=background-color:#f9f9f9>
 					<div class="mt-7">
-						<div id="web-ver">
-                            <div class=w-100></div>
-                            <div class=container id=web-ver>
-                                <p class="section-para-cont pt-2 pb-1">Leave us a message</p>
-                                <p class=common-para> Hope you are having a good day! Happy that you want to talk to us. You can either call our founder Dr. Abinaya or email us at <a href=mailto:learning@aalam.school><u>learning@aalam.school</u></a> or visit our school.
-                                    <br>
-                                    <br> We will be excited to hear from you!
-                                    <br>
-                                    <br> Have a great day,
-                                    <br> Aalam </p>
-                            </div>
-                        </div>
+						
                         
                         <div id="mob-ver">
                             <div class="image-zoom pt-6" data-dsn-grid=parallax data-dsn-grid-move=20> <img src=assets/img/contact/writetous.png alt> </div>
@@ -234,9 +230,9 @@
                                             <br> Have a great day, Aalam </p>
                                     </div>
                                 </div>
-                                <div class=text-center>
+                                <!-- <div class=text-center>
                                     <p class=section-para-cont>Leave us a message</p>
-                                </div>
+                                </div> -->
                         </div>
 
 						<div class=container>
@@ -244,13 +240,30 @@
 								<div class="col-lg-6 col-md-6 col-sm-12 contact-form-img" id=mob-ver>
 									<div class=image-zoom data-dsn-grid=parallax data-dsn-grid-move=20> <img src=assets/img/contact/contact.png alt> </div>
 								</div>
-								<div class="col-lg-6 col-md-6 col-sm-12 text-center mob-form mt-2">
+								<div class="col-lg-6 col-md-6 col-sm-12 mob-form mt-auto mb-auto">
 
-									<form method="POST" action="https://formspree.io/f/mvovknpz" enctype="multipart/form-data">
+									<div id="web-ver">
+										<!-- <div class=w-100></div> -->
+										<div class=container id=web-ver>
+											<p class="section-para-cont">Leave us a message</p>
+											<p class=common-para> Hope you are having a good day! Happy that you want to talk to us. You can either call our founder Dr. Abinaya or email us at <a href=mailto:learning@aalam.school><u>learning@aalam.school</u></a> or visit our school.
+												<br>
+												<br> We will be excited to hear from you!
+												<br>
+												<br> Have a great day,
+												<br> Aalam </p>
+										</div>
+									</div>
+
+									<div class="send-msg" data-dsn-grid=parallax data-dsn-grid-move=20>
+										<a href="mailto:learning@aalam.school" class=contact-btn>Send Message</a>
+									</div>
+
+									<!-- <form method="POST" action="emailContact.php" enctype="multipart/form-data">
 										<div class=form-group>
-											<input type=text class=form-control name="name" placeholder=Name required> </div>
+											<input type=text class=form-control name="fullname" placeholder=Name required> </div>
 										<div class=form-group>
-											<input type=mail class=form-control name="_replyto" placeholder=Email required> </div>
+											<input type=mail class=form-control name="email" placeholder=Email required> </div>
 										<div class=form-group>
 											<input type=number class=form-control name="phone" placeholder=Phone required> </div>
 										<div class=form-group>
@@ -263,7 +276,7 @@
 												<button type=submit class=contact-btn>Send Message</button>
 											</div>
 										</div>
-                                    </form>
+                                    </form> -->
                                     
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 contact-form-img mt-2 mb-3" id=web-ver>
