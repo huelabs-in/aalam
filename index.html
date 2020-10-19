@@ -9,107 +9,44 @@
 <meta name=HandheldFriendly content=true>
 <meta http-equiv=cache-control content=no-cache />
 <meta http-equiv=Pragma content=no-cache />
-
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-<link rel="manifest" href="assets/img/favicon/site.webmanifest">
-<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
+<link rel=apple-touch-icon sizes=180x180 href=assets/img/favicon/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=assets/img/favicon/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=assets/img/favicon/favicon-16x16.png>
+<link rel=manifest href=assets/img/favicon/site.webmanifest>
+<link rel=mask-icon href=assets/img/favicon/safari-pinned-tab.svg color=#5bbad5>
+<meta name=msapplication-TileColor content=#da532c>
+<meta name=theme-color content=#ffffff>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel=stylesheet>
-
 <link rel=preload type=text/css href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" as=style onload="this.onload=null;this.rel='stylesheet'">
 <link rel=stylesheet type=text/css href=css/vendor.css>
 <link rel=stylesheet type=text/css href=css/main.css>
 <script type=text/javascript src=js/update_cache.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js></script>
-<style>body,.overlay-cont .phil-cont,.ppl-cont,.footer-section-about .footer-p,.footer-section-about .footer-list a,.footer-section-about .get-in-touch p,.footer-section-about .copyright-area p,.quote-para,.common-para{font-family:'Ubuntu',sans-serif!important}.footer-title{font-family:'Cairo',sans-serif!important;line-height:1.4;font-weight:bold}.home-title{font-family:'Cairo',sans-serif!important;line-height:1.4;font-weight:bold}.phil-title,.prog-head,.ppl-title,.section-para-cont{font-family:'Cairo',sans-serif!important;line-height:1.4}.section-para-cont{font-size:24px}.phil-cont{font-family:'Ubuntu',sans-serif!important}.intro{padding-top:50px}@media(min-width:992px){.pad-b-300{padding-bottom:150px!important}}@media(min-width:1440px){.pad-b-300{padding-bottom:280px!important}}
-.parallax-div{margin:0;padding:0;width:100%;height:100vh;background:#d3cec2}
-.background-home{width:100%;height:100vh;position:absolute;background:url(assets/img/home/parallax/landing1.png) no-repeat;background-size:cover}
-.home1{position:absolute;width:100%;height:100vh;background:url(assets/img/home/parallax/cloudsgif.gif) no-repeat;background-size:cover}
-.home2{position:absolute;width:100%;height:100vh;background:url(assets/img/home/parallax/landing3.png) no-repeat;background-size:cover}
-.home3{position:absolute;width:100%;height:100vh;background:url(assets/img/home/parallax/landing4.png) no-repeat;background-size:cover}
-
-.background-home-mob{width:100%;height:100vh;position:absolute;background:url(assets/img/mobile/home/landinggitmob.gif) no-repeat;background-size:cover}
-.homemob1{position:absolute;width:100%;height:100vh;background:url(assets/img/mobile/home/landing2.png) no-repeat;background-size:cover}
-.homemob2{position:absolute;width:100%;height:100vh;background:url(assets/img/mobile/home/landing3.png) no-repeat;background-size:cover}
-
-.background-home-tab{width:100%;height:100vh;position:absolute;background:url(assets/img/tab/home/cloudgiftab.gif) no-repeat;background-size:cover}
-.hometab1{position:absolute;width:100%;height:100vh;background:url(assets/img/tab/home/landing2.png) no-repeat;background-size:cover}
-.hometab2{position:absolute;width:100%;height:100vh;background:url(assets/img/tab/home/landing3.png) no-repeat;background-size:cover}
-
-
-.ml10{position:relative;font-weight:900;font-size:4em}.ml10 .text-wrapper{position:relative;display:inline-block;padding-top:.2em;padding-right:.05em;padding-bottom:.1em;overflow:hidden}.ml10 .letter{display:inline-block;line-height:1em;transform-origin:0 0}.progress{background:rgba(255,255,255,0.1);justify-content:flex-start;border-radius:100px;align-items:center;position:relative;padding:0 5px;display:flex;height:5px;width:300px} .progress-value{animation:load 3s normal forwards;box-shadow:0 10px 40px -10px #fff;border-radius:100px;background:#fff;height:5px;width:0}@keyframes load{0%{width:0}100%{width:100%}}</style>
-
-<style> 
-    
-    .ani-img { 
-        animation: bounce 0.8s; 
-        animation-direction: alternate; 
-        animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
-        animation-iteration-count: infinite; 
-    } 
-      
-    @keyframes bounce { 
-        from { 
-            transform: translate3d(0, 0, 0); 
-        } 
-        to { 
-            transform: translate3d(0, 40px, 0); 
-        } 
-    } 
-    /* Prefix Support */ 
-      
-    .ani-img  { 
-        -webkit-animation-name: bounce; 
-        -webkit-animation-duration: 0.8s; 
-        -webkit-animation-direction: alternate; 
-        -webkit-animation-timing-function: cubic-bezier( 
-        .5, 0.05, 1, .5); 
-        -webkit-animation-iteration-count: infinite; 
-    } 
-      
-    @-webkit-keyframes bounce { 
-        from { 
-            -webkit-transform: translate3d(0, 0, 0); 
-            transform: translate3d(0, 0, 0); 
-        } 
-        to { 
-            -webkit-transform: translate3d(0, 200px, 0); 
-            transform: translate3d(0, 200px, 0); 
-        } 
-    } 
-</style>
-
+<style>body,.overlay-cont .phil-cont,.ppl-cont,.footer-section-about .footer-p,.footer-section-about .footer-list a,.footer-section-about .get-in-touch p,.footer-section-about .copyright-area p,.quote-para,.common-para{font-family:'Ubuntu',sans-serif!important}.footer-title{font-family:'Cairo',sans-serif!important;line-height:1.4;font-weight:bold}.home-title{font-family:'Cairo',sans-serif!important;line-height:1.4;font-weight:bold}.phil-title,.prog-head,.ppl-title,.section-para-cont{font-family:'Cairo',sans-serif!important;line-height:1.4}.section-para-cont{font-size:24px}.phil-cont{font-family:'Ubuntu',sans-serif!important}.intro{padding-top:50px}@media(min-width:992px){.pad-b-300{padding-bottom:150px!important}}@media(min-width:1440px){.pad-b-300{padding-bottom:280px!important}}.parallax-div{margin:0;padding:0;width:100%;height:100vh;background:#d3cec2}.background-home{width:100%;height:100vh;position:absolute;background:url(assets/img/home/parallax/landing1.png) no-repeat;background-size:cover}.home1{position:absolute;width:100%;height:100vh;background:url(assets/img/home/parallax/cloudsgif.gif) no-repeat;background-size:cover}.home2{position:absolute;width:100%;height:100vh;background:url(assets/img/home/parallax/landing3.png) no-repeat;background-size:cover}.home3{position:absolute;width:100%;height:100vh;background:url(assets/img/home/parallax/landing4.png) no-repeat;background-size:cover}.background-home-mob{width:100%;height:100vh;position:absolute;background:url(assets/img/mobile/home/landinggitmob.gif) no-repeat;background-size:cover}.homemob1{position:absolute;width:100%;height:100vh;background:url(assets/img/mobile/home/landing2.png) no-repeat;background-size:cover}.homemob2{position:absolute;width:100%;height:100vh;background:url(assets/img/mobile/home/landing3.png) no-repeat;background-size:cover}.background-home-tab{width:100%;height:100vh;position:absolute;background:url(assets/img/tab/home/cloudgiftab.gif) no-repeat;background-size:cover}.hometab1{position:absolute;width:100%;height:100vh;background:url(assets/img/tab/home/landing2.png) no-repeat;background-size:cover}.hometab2{position:absolute;width:100%;height:100vh;background:url(assets/img/tab/home/landing3.png) no-repeat;background-size:cover}.ml10{position:relative;font-weight:900;font-size:4em}.ml10 .text-wrapper{position:relative;display:inline-block;padding-top:.2em;padding-right:.05em;padding-bottom:.1em;overflow:hidden}.ml10 .letter{display:inline-block;line-height:1em;transform-origin:0 0}.progress{background:rgba(255,255,255,0.1);justify-content:flex-start;border-radius:100px;align-items:center;position:relative;padding:0 5px;display:flex;height:5px;width:300px}.progress-value{animation:load 3s normal forwards;box-shadow:0 10px 40px -10px #fff;border-radius:100px;background:#fff;height:5px;width:0}@keyframes load{0%{width:0}100%{width:100%}}</style>
+<style>.ani-img{animation:bounce .8s;animation-direction:alternate;animation-timing-function:cubic-bezier(.5,0.05,1,.5);animation-iteration-count:infinite}@keyframes bounce{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,40px,0)}}.ani-img{-webkit-animation-name:bounce;-webkit-animation-duration:.8s;-webkit-animation-direction:alternate;-webkit-animation-timing-function:cubic-bezier(.5,0.05,1,.5);-webkit-animation-iteration-count:infinite}@-webkit-keyframes bounce{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}to{-webkit-transform:translate3d(0,200px,0);transform:translate3d(0,200px,0)}}</style>
 </head>
 <body class=home-body>
 <div class="preloader text-center preloader-bg" id=js-preloader data-arts-theme-text=light>
 <div class=preloader__content>
 <div class="preloader__header mt-auto mb-auto">
-<img src=assets/img/loading-logo.png class="ani-img" width=70% alt>
+<img src=assets/img/loading-logo.png class=ani-img width=70% alt>
 </div>
-<div class="preloader__counter">
-<!-- <div class=progress>
-<div class=progress-value></div>
-</div> -->
+<div class=preloader__counter>
 </div>
 </div>
 </div>
-
 <div class="curtain transition-curtain" id=js-page-transition-curtain>
 <div class=curtain__wrapper-svg>
 <svg class=curtain-svg viewBox="0 0 1920 1080" preserveAspectRatio=none version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink>
-<path class=curtain-svg__normal style="fill: #fff;" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+<path class=curtain-svg__normal style=fill:#fff d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
 </path>
-<path class="curtain-svg__curve curtain-svg__curve_top-desktop" style="fill: #fff;" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+<path class="curtain-svg__curve curtain-svg__curve_top-desktop" style=fill:#fff d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
 </path>
-<path class="curtain-svg__curve curtain-svg__curve_top-mobile" style="fill: #fff;" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+<path class="curtain-svg__curve curtain-svg__curve_top-mobile" style=fill:#fff d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
 </path>
-<path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" style="fill: #fff;" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+<path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" style=fill:#fff d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
 </path>
-<path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" style="fill: #fff;" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+<path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" style=fill:#fff d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
 </path>
 </svg>
 </div>
@@ -146,7 +83,6 @@
 </svg>
 </div>
 </div>
-
 <div class=cursor id=js-cursor>
 <div class=cursor__wrapper>
 <div class=cursor__follower>
@@ -307,13 +243,11 @@ Scroll down to explore
 <div class="rellax homemob1" data-rellax-speed=5></div>
 <div class="rellax homemob2" data-rellax-speed=0></div>
 </div>
-
 <div class=parallax-div id=tab-ver>
-    <div class=background-home-tab></div>
-    <div class="rellax hometab1" data-rellax-speed=3></div>
-    <div class="rellax hometab2" data-rellax-speed=2></div>
+<div class=background-home-tab></div>
+<div class="rellax hometab1" data-rellax-speed=3></div>
+<div class="rellax hometab2" data-rellax-speed=2></div>
 </div>
-
 </div>
 </section>
 <section class=intro data-aos=fade-up>
@@ -512,11 +446,10 @@ with fun activities at home.
 <div class=container style=padding-left:20px>
 <div class="pt-2 pb-3 text-center">
 <div data-dsn-grid=parallax data-dsn-grid-move=20>
-<a href="https://www.instagram.com/aalamplay/" target="_blank" class=contact-btn>View Profile</a>
+<a href=https://www.instagram.com/aalamplay/ target=_blank class=contact-btn>View Profile</a>
 </div>
 </div>
 <div class="text-center pad-b-300">
-
 </div>
 </div>
 </div>
@@ -533,7 +466,7 @@ with fun activities at home.
 <div class="single-footer mb--50 mb-lg--30">
 <h5 class=footer-title>About Aalam</h5>
 <p class=footer-p>
-    Aalam learning centre is your neighbourhood, minimalistic play school focussing on creating joyous learning environment!
+Aalam learning centre is your neighbourhood, minimalistic play school focussing on creating joyous learning environment!
 </p>
 </div>
 </div>
@@ -589,7 +522,7 @@ Nadu</span></p>
 <p class=copyright-text>Copyright © 2020 <b>Aalam Learning Centre</b></p>
 </div>
 <div class="col-sm-6 text-sm-right text-center">
-<p class=copyright-text>Designed by <a href><b>design distrikt</b></a></p>
+<p class=copyright-text>Designed by <a href="http://thedesigndistrikt.com/" target="_blank"><b>design distrikt</b></a></p>
 </div>
 </div>
 </div>
